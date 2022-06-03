@@ -1,10 +1,11 @@
 <script lang="ts">
-	export let name: string;
+	import PersonalInfo from "./components/personal/PersonalInfo.svelte";
+	import WorkplaceList from "./components/workplaces/WorkplaceList.svelte";
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<PersonalInfo />
+	<WorkplaceList />
 </main>
 
 <style>
@@ -13,6 +14,10 @@
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+	}
+
+	section {
+		background-color: antiquewhite;
 	}
 
 	h1 {
